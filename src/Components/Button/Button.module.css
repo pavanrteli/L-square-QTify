@@ -4,3 +4,7 @@
     padding:9px 15px;
     border-radius:12px;
 }
+
+Button:hover{
+    cursor: pointer;
+}
