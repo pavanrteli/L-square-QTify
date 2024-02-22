@@ -1,0 +1,23 @@
+.SearchBar{
+    height:100%;
+    padding: 9px 15px;
+    width:35vw;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #121212
+    /* background-color: #FFFFFF; */
+}
+
+.SearchIcon{
+    /* height:100%; */
+    padding: 5px 8px;
+    border-radius: 0px 8px 8px 0px;
+    border: 1px solid #121212
+
+    /* background-color: #FFFFFF; */
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+}
