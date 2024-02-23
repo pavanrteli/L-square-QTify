@@ -1,11 +1,8 @@
 .button{
+    cursor:pointer;
     background-color:#121212;
     color:#34C94B;
     padding:9px 15px;
     border-radius:12px;
     font-family:'Poppins',sans-serif;
-}
-
-.button:hover{
-    cursor: pointer;
 }
