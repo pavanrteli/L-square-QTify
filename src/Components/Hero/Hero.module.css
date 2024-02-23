@@ -2,4 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #121212;
+    height: 270px;
+    text-align: center;
+    gap:30px
+}
+.fontColor{
+    color: #FFFFFF;
 }
