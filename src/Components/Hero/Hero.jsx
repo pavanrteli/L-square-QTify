@@ -7,8 +7,8 @@ function Hero() {
   return (
     <div className={styles.Hero}>
         <div className={styles.fontColor}>
-            <h2>100 Thousands Songs, add-free</h2>
-            <h2>Over thousands podcast episodes</h2>
+            <h1>100 Thousand Songs, add-free</h1>
+            <h1>Over thousands podcast episodes</h1>
         </div>
         <div>
             <img src={HeroImage} alt="HeroImage" width="212px" />
