@@ -1,4 +1,4 @@
-.Button{
+.button{
     background-color:#121212;
     color:#34C94B;
     padding:9px 15px;
@@ -6,6 +6,6 @@
     font-family:'Poppins',sans-serif;
 }
 
-.Button:hover{
+.button:hover{
     cursor: pointer;
 }
