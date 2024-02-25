@@ -1,0 +1,22 @@
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    height: 232px;
+    width: 159px;
+}
+
+.chip{
+    width: 80pxpx;
+    background-color: #121212;
+    padding: 4px 8px 4px 8px; 
+    margin: 4px;
+}
+
+.imageBorder{
+    border-radius: 8px 8px 0 0;
+}
+
+.chipBorder{
+    border-radius: 0 0 8px 8px;
+    background-color: #FFFFFF;
+}
