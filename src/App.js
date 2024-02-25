@@ -15,18 +15,17 @@ function App() {
         [key]:data
       }))
     })
-
   }
   useEffect(()=>{
     generateData("TopAlbums",FetchTopAlbums);
   },[])
 
-  const {TopAlbums}=data;
+  const {TopAlbums=[]}=data;
 
   return (
     <div>
       <NavBar/>
-      {/* <Outlet context={{data:{TopAlbums}}}/> */}
+      <Outlet context={{data:{TopAlbums}}}/>
       {/* <Hero/>
       <Section Type={"TopAlbums"} Albums={TopAlbums}/> */}
     </div>
