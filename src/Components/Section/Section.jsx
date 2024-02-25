@@ -14,7 +14,6 @@ function Section({title, data, type}) {
             <h2 className={styles.headerSection}>Top Albums</h2>
           </div>
         </Grid>
-
         { 
           data.map((val)=>{
             const {id, image, follows, title}=val;
