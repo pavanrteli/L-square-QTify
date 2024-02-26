@@ -7,8 +7,35 @@ function Section({title, data, type}) {
 
   return (
     <>
+      <div className={styles.flexContainer}>
+        <div className={styles.section1}>
+          <h3 className={styles.topAlbums}>{title==="Top Albums"?"Top Albums":"New Albums"}</h3>
+          <h4 className={styles.collapse}>Collapse</h4>
+        </div>
+        <div className={styles.topAlbumsSection}>
+        { 
+          data.map((val)=>{
+            const {id, image, follows, title}=val;
+            console.log(id,image,follows);
+            return (
+                <div item key={id}>
+                    <Card cardImage={image} follows={follows} title={title}/>
+                </div>
+            )
+          })
+        }
+        </div>
+      </div>
+    </>
+  )
+}
 
-      <Grid container className={styles.gridContainer}>
+export default Section
+
+
+
+
+      {/* <Grid container className={styles.gridContainer}>
         <Grid item sm={12}>
           <div>
             <h2 className={styles.headerSection}>Top Albums</h2>
@@ -26,9 +53,4 @@ function Section({title, data, type}) {
           })
           
         }
-      </Grid>
-    </>
-  )
-}
-
-export default Section
+      </Grid> */}

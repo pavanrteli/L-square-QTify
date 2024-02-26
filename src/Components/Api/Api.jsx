@@ -11,3 +11,12 @@ export const FetchTopAlbums=async()=>{
     }
 }
 
+export const FetchNewAlbums=async()=>{
+    try{
+        const response=await axios(`https://qtify-backend-labs.crio.do/albums/new`);
+        // console.log(response);
+        return response.data;
+    } catch(e){
+        console.error(e);
+    }
+}

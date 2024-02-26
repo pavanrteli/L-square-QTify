@@ -6,3 +6,29 @@
 .headerSection{
     color: #FFFFFF;
 }
+
+/* flex */
+.flexContainer{
+    background-color: #121212;
+    padding: 10px 20px;
+}
+
+.section1{
+    display: flex;
+    justify-content:space-between;
+}
+
+.topAlbums{
+    color: #FFFFFF;
+}
+
+.collapse{
+    color: #34C94B;
+    padding-right:25px;
+}
+
+.topAlbumsSection{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

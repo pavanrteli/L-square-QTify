@@ -3,7 +3,7 @@ import NavBar from './Components/NavBar/NavBar';
 import Hero from './Components/Hero/Hero';
 import Section from './Components/Section/Section';
 import { useEffect, useState } from 'react';
-import {FetchTopAlbums} from "./Components/Api/Api";
+import {FetchTopAlbums, FetchNewAlbums} from "./Components/Api/Api";
 import {Outlet} from "react-router-dom";
 
 function App() {
@@ -18,14 +18,15 @@ function App() {
   }
   useEffect(()=>{
     generateData("TopAlbums",FetchTopAlbums);
+    generateData("NewAlbums",FetchNewAlbums);
   },[])
 
-  const {TopAlbums=[]}=data;
+  const {TopAlbums=[], NewAlbums=[]}=data;
 
   return (
     <div>
       <NavBar/>
-      <Outlet context={{data:{TopAlbums}}}/>
+      <Outlet context={{data:{TopAlbums, NewAlbums}}}/>
       {/* <Hero/>
       <Section Type={"TopAlbums"} Albums={TopAlbums}/> */}
     </div>
