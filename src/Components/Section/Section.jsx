@@ -17,7 +17,7 @@ function Section({title, data, type}) {
         { 
           data.map((item)=>{
             const {id}=item;
-            // console.log(id,image,follows);
+            // console.log(item,"iiiiiiiiiiiiii");
             return (
                 <div key={id}>
                     <Card data={item} type={type}/>

@@ -7,7 +7,7 @@ function HomePage() {
   const {data}=useOutletContext();
   const {TopAlbums, NewAlbums, Songs}=data;
   // console.log(TopAlbums,"aaaaaaaaaaaaaaa")
-  // console.log(TopAlbums,"ttttttttt")
+  console.log(data,"ddddddddd")
   return (
     <div>
       <Hero/>
