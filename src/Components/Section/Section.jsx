@@ -13,6 +13,7 @@ function Section({title, data, type}) {
           <h4 className={styles.collapse}>Collapse</h4>
         </div>
         <div className={styles.topAlbumsSection}>
+          {console.log(data.length)}
         { 
           data.map((album)=>{
             const {id, image, follows, title}=album;
@@ -23,7 +24,9 @@ function Section({title, data, type}) {
                 </div>
             )
           })
+          
         }
+        {data=[]}
         </div>
       </div>
     </>

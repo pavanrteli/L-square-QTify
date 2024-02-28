@@ -3,7 +3,7 @@ import Chip from '@mui/material/Chip';
 import styles from "./Card.module.css";
 
 function Card({cardImage,follows,title}) {
-  console.log(cardImage,follows,title);
+  // console.log(cardImage,follows,title);
   return (
     // <div>
         <div className={styles.wrapper}>

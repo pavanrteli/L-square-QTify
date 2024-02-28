@@ -6,8 +6,8 @@ import { useOutletContext } from "react-router-dom";
 function HomePage() {
   const {data}=useOutletContext();
   const {TopAlbums, NewAlbums, Songs}=data;
-  console.log(TopAlbums,"aaaaaaaaaaaaaaa")
-  console.log(TopAlbums,"ttttttttt")
+  // console.log(TopAlbums,"aaaaaaaaaaaaaaa")
+  // console.log(TopAlbums,"ttttttttt")
   return (
     <div>
       <Hero/>
