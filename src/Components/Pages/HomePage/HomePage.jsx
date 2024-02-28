@@ -5,7 +5,7 @@ import { useOutletContext } from "react-router-dom";
 
 function HomePage() {
   const {data}=useOutletContext();
-  const {TopAlbums,NewAlbums}=data;
+  const {TopAlbums, NewAlbums, Songs}=data;
   console.log(TopAlbums,"aaaaaaaaaaaaaaa")
   console.log(TopAlbums,"ttttttttt")
   return (
@@ -13,6 +13,7 @@ function HomePage() {
       <Hero/>
       <Section title={"Top Albums"} data={TopAlbums} type={"album"}/>
       <Section title={"New Albums"} data={NewAlbums} type={"album"}/>
+      <Section title={"Songs"} data={Songs} type={"songs"}/>
     </div>
   )
 }

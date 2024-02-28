@@ -7,15 +7,15 @@ function Section({title, data, type}) {
 
   return (
     <>
-      <div className={styles.flexContainer}>
+      <div className={styles.flexContainer} style={{border:title==="Songs"?"1px solid #34C94B":""}}>
         <div className={styles.section1}>
-          <h3 className={styles.topAlbums}>{title==="Top Albums"?"Top Albums":"New Albums"}</h3>
+          <h3 className={styles.topAlbums}>{title==="Top Albums"?"Top Albums":title==="New Albums"?"New Albums":"Songs"}</h3>
           <h4 className={styles.collapse}>Collapse</h4>
         </div>
         <div className={styles.topAlbumsSection}>
         { 
-          data.map((val)=>{
-            const {id, image, follows, title}=val;
+          data.map((album)=>{
+            const {id, image, follows, title}=album;
             // console.log(id,image,follows);
             return (
                 <div key={id}>

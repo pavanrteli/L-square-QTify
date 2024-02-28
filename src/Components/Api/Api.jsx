@@ -20,3 +20,13 @@ export const FetchNewAlbums=async()=>{
         console.error(e);
     }
 }
+
+export const FetchSongs=async()=>{
+    try{
+        const response=await axios(`https://qtify-backend-labs.crio.do/songs`);
+        // console.log(response);
+        return response.data;
+    } catch(e){
+        console.error(e);
+    }
+}
