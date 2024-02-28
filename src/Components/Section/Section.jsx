@@ -15,18 +15,17 @@ function Section({title, data, type}) {
         <div className={styles.topAlbumsSection}>
           {console.log(data.length)}
         { 
-          data.map((album)=>{
-            const {id, image, follows, title}=album;
+          data.map((item)=>{
+            const {id}=item;
             // console.log(id,image,follows);
             return (
                 <div key={id}>
-                    <Card cardImage={image} follows={follows} title={title}/>
+                    <Card data={item} type={type}/>
                 </div>
             )
-          })
-          
+          }) 
         }
-        {data=[]}
+        {/* {data=[]} */}
         </div>
       </div>
     </>
