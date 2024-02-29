@@ -24,7 +24,12 @@
 
 .collapse{
     color: #34C94B;
+    background-color: #121212;
     padding-right:25px;
+}
+
+.collapse:hover{
+    cursor: pointer;
 }
 
 .topAlbumsSection{

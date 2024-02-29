@@ -1,0 +1,7 @@
+.mySwiper.swiper-button-next{
+    background-image: url('../../assets/RightArrow.svg');
+}
+
+.mySwiper.swiper-button-prev{
+    background-image: url('../../assets/LeftArrow.svg');
+}

@@ -2,19 +2,23 @@ import { Grid } from '@mui/material';
 import React from 'react';
 import Card from '../Card/Card';
 import styles from './Section.module.css';
+import {useState} from 'react';
+import Carousel from '../Carousel/Carousel';
 
 function Section({title, data, type}) {
+  const [Toggle, setToggle]=useState(true);
 
   return (
     <>
       <div className={styles.flexContainer} style={{border:title==="Songs"?"1px solid #34C94B":""}}>
         <div className={styles.section1}>
           <h3 className={styles.topAlbums}>{title==="Top Albums"?"Top Albums":title==="New Albums"?"New Albums":"Songs"}</h3>
-          <h4 className={styles.collapse}>Collapse</h4>
+          <h4 className={styles.collapse} onClick={()=>{setToggle(!Toggle)}}>{Toggle?"Show all":"Collapse"}</h4>
         </div>
         <div className={styles.topAlbumsSection}>
-          {console.log(data.length)}
-        { 
+          {/* {console.log(data.length)} */}
+        { Toggle?
+          <Carousel data={data} type={type}/>:
           data.map((item)=>{
             const {id}=item;
             // console.log(item,"iiiiiiiiiiiiii");
