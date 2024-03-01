@@ -1,12 +1,14 @@
 import React from 'react'
 import Chip from '@mui/material/Chip';
 import styles from "./Card.module.css";
+import Tooltip from '@mui/material/Tooltip';
 
 function Card({data, type}) {
   // console.log(data,"ddddddddddddddd");
   const {image, follows, title}=data;
   if(type==="album"){
   return (
+    <Tooltip title="42 songs" placement='top'>
         <div className={styles.wrapper}>
             <img src={image} alt="Card Logo" className={styles.imageBorder} width="100%" height="170px" />
             <div className={styles.chipBorder}>
@@ -19,11 +21,13 @@ function Card({data, type}) {
               {title}
             </div>
         </div>
+    </Tooltip>
   )
   } else{
   const {image, likes, title}=data;
 
     return (
+      <Tooltip title="54 songs" placement='top'>
           <div className={styles.wrapper}>
               <img src={image} alt="Card Logo" className={styles.imageBorder} width="100%" height="170px" />
               <div className={styles.chipBorder}>
@@ -36,6 +40,7 @@ function Card({data, type}) {
                 {title}
               </div>
           </div>
+      </Tooltip>
     )
 
   }

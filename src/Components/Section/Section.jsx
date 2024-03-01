@@ -41,7 +41,7 @@ console.log(index);
         <div className={styles.topAlbumsSection}>
           {/* {console.log(data.length)} */}
         { Toggle?
-          <Carousel data={data} type={type}/>:
+            <Carousel data={data} type={type}/>:
           data.map((item)=>{
             const {id}=item;
             // console.log(item,"iiiiiiiiiiiiii");
@@ -51,6 +51,7 @@ console.log(index);
                 </div>
             )
           }) 
+          
         }
 
         </div>
