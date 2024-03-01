@@ -30,3 +30,13 @@ export const FetchSongs=async()=>{
         console.error(e);
     }
 }
+
+export const FetchGenres=async()=>{
+    try{
+        const response=await axios(`https://qtify-backend-labs.crio.do/genres`);
+        // console.log(response);
+        return response.data;
+    } catch(e){
+        console.error(e);
+    }
+}
