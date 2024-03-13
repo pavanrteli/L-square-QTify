@@ -5,3 +5,7 @@
 .mySwiper.swiper-button-prev{
     background-image: url('../../assets/LeftArrow.svg');
 }
+
+.swiperSlide{
+    width: auto !important;
+}
